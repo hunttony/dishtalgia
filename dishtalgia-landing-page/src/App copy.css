@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ background-color: rgb(254, 211, 37);
+
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.App-header {
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  text-shadow: 10px 10px 20px #b73700;
+  
+  }
+
+  .App-header img {
+    scale: 1.8;
+    margin: 50px;
+    background-color: none;
+    border-radius: 30px;
+    padding: 3px;   
+    
+  }
+
+  .App-header img:hover{
+    transition: transform 1s ease-in-out;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  .product-display {
+    margin-top: 40px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
+    scrollbar-width: none;
+  }
+  
+  .product {
+    min-width: 150px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product p {
+    margin-top: 10px;
+    font-weight: bold;
+    
+  }
+  
+  
+
+.cta-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+}
+
+.cta-button:hover {
+  background-color: #e5533d;
+  box-shadow: 7px 7px 14px rgba(0,0,0,.8);
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.subscribe-section {
+  margin-top: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for better contrast */
+  padding: 40px;
+  border-radius: 20px;
+  color: rgb(254, 211, 37);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px); /* Adds a soft blur effect for a modern touch */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-top: 20px;
+}
+
+.contact-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(254, 211, 37, 0.6);
+}
+
+.subscribe-button {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.subscribe-button:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+
+.chef-spotlight {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chef-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
