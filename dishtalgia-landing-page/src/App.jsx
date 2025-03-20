@@ -13,6 +13,7 @@ import {
   TextareaAutosize,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import "./App.css";
 
 const App = () => {
@@ -65,6 +66,12 @@ const App = () => {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Dishtalgia - Delicious Banana Pudding</title>
+        <meta name="description" content="Enjoy the best banana pudding at Dishtalgia. Subscribe for updates and contact us for more information." />
+        <meta name="keywords" content="banana pudding, Dishtalgia, dessert, food truck, Humble TX, Houston TX, Bananas Foster  " />
+      </Helmet>
+
       <header className="App-header">
         {/* Title */}
         <motion.h1
