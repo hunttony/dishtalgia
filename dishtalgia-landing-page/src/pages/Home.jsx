@@ -79,7 +79,7 @@ const Home = () => {
         </Box>
 
         {/* Fun Facts Section */}
-        <Paper elevation={6} sx={{ padding: 4, marginTop: 5, backgroundColor: "#f8f8f8" }}>
+        <Paper elevation={6} sx={{ padding: 4, marginTop: 5, backgroundColor: "#f8f8f8" , marginBottom: 20}}>
           <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold", color: "#333", marginBottom: 2 }}>
             🍌 Fun Facts About Banana Pudding! 🍮
           </Typography>
