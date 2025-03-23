@@ -1,4 +1,4 @@
-import Reac, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container, Typography, Box, Button, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
