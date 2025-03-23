@@ -8,7 +8,7 @@ const OriginalBananaPudding = () => {
     <Container sx={{ paddingY: 4,
       borderRadius: "50%",
               backgroundColor:"rgba(255, 128, 0, 0.03)",
-              fontFamily:"cursive",              
+              fontFamily:"Tahoma",              
               textShadow: "rgb(255, 140, 0) 1px 1px 10px",
               color: "rgb(55,55,55)",
      }}>
@@ -24,7 +24,7 @@ const OriginalBananaPudding = () => {
 
       <Typography
         variant="h3"
-        sx={{ fontFamily:"cursive", fontWeight: "bold", textAlign: "center", marginBottom: 3, color:"red" }}
+        sx={{ fontFamily:"Tahoma", fontWeight: "bold", textAlign: "center", marginBottom: 3, color:"red" }}
       >
         Original Banana Pudding
       </Typography>
@@ -49,7 +49,7 @@ const OriginalBananaPudding = () => {
               padding: "20px",
               borderRadius: "50%",
               backgroundColor:"rgba(0,0,0,0.025)",
-              fontFamily:"cursive",
+              fontFamily:"Tahoma",
               fontSize:"20px",
               textShadow: "rgb(255, 55, 0) 1px 1px 10px",
               color: "rgb(55,55,55)", // Added for readability on dark background
@@ -78,7 +78,7 @@ const OriginalBananaPudding = () => {
               padding: "20px",
               borderRadius: "50%",
               backgroundColor:"rgba(0,0,0,0.025)",
-              fontFamily:"cursive",
+              fontFamily:"Tahoma",
               fontSize:"20px",
               textShadow: "rgb(255, 55, 0) 1px 1px 10px",
               color: "rgb(55,55,55)", // Added for readability on dark background
@@ -95,7 +95,7 @@ const OriginalBananaPudding = () => {
 
       {/* Ingredients */}
       <Typography variant="h5" sx={{ marginTop: 3, fontWeight: "bold",
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         fontSize:"20px",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(0, 0, 0)",
@@ -108,7 +108,7 @@ const OriginalBananaPudding = () => {
         padding: "20px",
         borderRadius: "10%",
        
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         fontSize:"18px",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",  // Added for readability on dark background
@@ -122,7 +122,7 @@ const OriginalBananaPudding = () => {
           padding: "5px",
           borderRadius: "10px",
           backgroundColor:"rgba(0,0,0,0.025)",
-          fontFamily:"cursive",
+          fontFamily:"Tahoma",
           fontSize:"20px",
           textShadow: "rgb(255, 55, 0) 1px 1px 10px",
           color: "rgb(0, 0, 0)",  // Added for readability on dark background
@@ -134,7 +134,7 @@ const OriginalBananaPudding = () => {
         padding: "5px",
         borderRadius: "10%",
         
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         textAlign:"center",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",
@@ -151,7 +151,7 @@ const OriginalBananaPudding = () => {
         padding: "5px",
         borderRadius: "10%",
         backgroundColor:"rgba(0,0,0,0.025)",
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         textAlign:"center",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",
@@ -162,7 +162,7 @@ const OriginalBananaPudding = () => {
       sx={{ marginTop: 3, fontWeight: "bold",
         padding: "5px",
         borderRadius: "50%",
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         textAlign:"center",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",
@@ -177,7 +177,7 @@ const OriginalBananaPudding = () => {
       sx={{ marginTop: 3, fontWeight: "bold",
         padding: "5px",
         borderRadius: "50%",
-        fontFamily:"cursive",
+        fontFamily:"Tahoma",
         textAlign:"center",
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",

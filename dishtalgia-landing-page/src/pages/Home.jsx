@@ -40,7 +40,7 @@ const Home = () => {
         <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} style={{ textAlign: "center" }}>
           <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: 2,
            
-                fontFamily:"cursive",
+                fontFamily:"Tahoma",
                 textShadow: "rgb(255, 55, 0) 1px 1px 10px",
                 color: "rgb(55,55,55)", // Added for readability on dark background
              
