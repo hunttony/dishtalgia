@@ -6,22 +6,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 
 const Home = () => {
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://assets.mailerlite.com/js/universal.js";
-        script.async = true;
-        document.body.appendChild(script);
-        
-        script.onload = () => {
-          if (window.ml) {
-            window.ml("account", "1404622");
-          }
-        };
     
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
   return (
     <div className="Home">
       {/* SEO Optimization */}
