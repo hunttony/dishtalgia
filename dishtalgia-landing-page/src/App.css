@@ -4,7 +4,6 @@ body {
   padding: 0;
   width: 100vw;
   font-family: 'Poppins', sans-serif;
-  background-color: rgba(255, 200, 2, 0.495);
   background-image: linear-gradient(to bottom, transparent, #ffcc00);
   color: #fff;
 }
