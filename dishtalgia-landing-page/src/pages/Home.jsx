@@ -95,7 +95,7 @@ const Home = () => {
         </Paper>
 
         {/* Subscription Section (MailerLite Embed) */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} marginTop={4}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} marginTop={2}>
           <div className="ml-embedded" data-form="CEF1JJ"></div>
         </motion.div>
       </Container>
