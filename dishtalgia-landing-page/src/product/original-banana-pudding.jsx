@@ -139,10 +139,10 @@ const OriginalBananaPudding = () => {
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",
        }}>
-        <Typography component="li">Small (4oz) - $5</Typography>
-        <Typography component="li">Regular (8oz) - $8</Typography>
-        <Typography component="li">Medium (16oz) - $18</Typography>
-        <Typography component="li">Large (32oz) - $30</Typography>
+        <Typography component="li">Small (4oz) - $7</Typography>
+        <Typography component="li">Regular (8oz) - $12</Typography>
+        <Typography component="li">Medium (16oz) - $21</Typography>
+        <Typography component="li">Large (32oz) - $38</Typography>
         <Typography component="li">Party (96oz) - call</Typography>
       </Box>
 

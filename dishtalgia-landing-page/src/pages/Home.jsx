@@ -216,15 +216,11 @@ const Home = () => {
                 color: "rgb(55,55,55)",
               }}
             >
-              Subscribe for Updates
+             
             </Typography>
-            <div className="ml-embedded" data-form="CEF1JJ"></div>
-            {!scriptLoaded && (
-              <Typography variant="body2" sx={{ marginTop: 2, color: "#555" }}>
-                Loading subscription form... If this doesn’t appear, please
-                check your connection or try again later.
-              </Typography>
-            )}
+
+            <div className="ml-embedded" data-form="CEF1JJ">form            </div>
+            
           </motion.div>
         </Box>
       </Container>
