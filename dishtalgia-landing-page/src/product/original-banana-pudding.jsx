@@ -33,7 +33,7 @@ const OriginalBananaPudding = () => {
       <Box display="flex" justifyContent="center" gap={2} flexWrap="wrap">
         <img
           src="/DOBP.png"
-          alt="Bananas Foster Pudding"
+          alt="Best Bananas Foster Pudding in Houston"
           style={{ width: "50%", borderRadius: 10 }}
         />
         <motion.div
@@ -62,7 +62,7 @@ const OriginalBananaPudding = () => {
                 
         <img
           src="/DOBP4.png"
-          alt="Banana Pudding Close-up"
+          alt="Best Banana Pudding in Houston Close-up"
           style={{ width: "50%", borderRadius: 10 }}
         />
         <motion.div
@@ -114,7 +114,7 @@ const OriginalBananaPudding = () => {
         color: "rgb(55,55,55)",  // Added for readability on dark background
       }}>
         🍌 Fresh Organic Bananas, 🥛 Sweet Cream, 🍪 Nilla Wafers, 🍮 Real Vanilla,
-        Our Original Pudding, 🍬 Sugar, 🧈 Butter, 🍹 Rum, and Our Butter-Nut Crumble
+        
       </Typography>
 
       {/* Size Choices */}
@@ -139,8 +139,8 @@ const OriginalBananaPudding = () => {
         textShadow: "rgb(255, 55, 0) 1px 1px 10px",
         color: "rgb(55,55,55)",
        }}>
-        <Typography component="li">Small (4oz) - $6</Typography>
-        <Typography component="li">Regular (8oz) - $10</Typography>
+        <Typography component="li">Small (4oz) - $5</Typography>
+        <Typography component="li">Regular (8oz) - $8</Typography>
         <Typography component="li">Medium (16oz) - $18</Typography>
         <Typography component="li">Large (32oz) - $30</Typography>
         <Typography component="li">Party (96oz) - call</Typography>
