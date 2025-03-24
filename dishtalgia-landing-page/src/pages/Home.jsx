@@ -79,9 +79,7 @@ const Home = () => {
               </Link>
             </Paper>
           </motion.div>
-          <div className="ml-embedded" data-form="CEF1JJ"></div>
         </Box>
-        
 
         {/* Fun Facts Section */}
         <Paper elevation={6} sx={{ padding: 4, marginTop: 5, backgroundColor: "#f8f8f8", marginBottom: 20 }}>
@@ -98,7 +96,7 @@ const Home = () => {
 
         {/* Subscription Section (MailerLite Embed) */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} marginTop={4}>
-          
+          <div className="ml-embedded" data-form="CEF1JJ"></div>
         </motion.div>
       </Container>
     </div>
