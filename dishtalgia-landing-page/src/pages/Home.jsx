@@ -79,8 +79,9 @@ const Home = () => {
               </Link>
             </Paper>
           </motion.div>
+          <div className="ml-embedded" data-form="CEF1JJ"></div>
         </Box>
-        <div className="ml-embedded" data-form="CEF1JJ"></div>
+        
 
         {/* Fun Facts Section */}
         <Paper elevation={6} sx={{ padding: 4, marginTop: 5, backgroundColor: "#f8f8f8", marginBottom: 20 }}>
