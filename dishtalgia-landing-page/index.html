@@ -2,13 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/dishtalgia_label1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dishtalgia</title>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY33WYZ2S2"></script>
 <!-- MailerLite Universal -->
-
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1404622');
+</script>
 <!-- End MailerLite Universal -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,17 +23,23 @@
 
   gtag('config', 'G-QY33WYZ2S2');
 </script>
-<script>
-  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-  ml('account', '1404622');
+<script
+  src="https://www.paypal.com/sdk/js?client-id=BAAXnxrqagXwz8f7DpSLMrBcd_4XIHQYqOvT4ZWU_4ST2S8_hGI59HBwydZX0jr4pcdHOK_EzsN0axlF7Q&components=hosted-buttons&enable-funding=venmo&currency=USD" 
+  crossorigin="anonymous" 
+  async>
 </script>
 
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        paypal.HostedButtons({
+          hostedButtonId: "JWU8P2CVR9LVS"
+        })
+        .render("#paypal-container-JWU8P2CVR9LVS")
+      })
+    </script>
   </body>
 </html>

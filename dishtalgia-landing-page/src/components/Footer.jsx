@@ -35,7 +35,9 @@ const Footer = () => {
             alt="TikTok"
           />
         </a>
+        
       </div>
+      
     </footer>
   );
 };
