@@ -22,7 +22,7 @@ const BananasFosterPudding = () => {
           name="description"
           content="Experience the rich, caramelized flavor of our Bananas Foster Pudding, a delightful twist on the classic dessert."
         />
-        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, bananas foster, sauce, creamy, bananas, houston, heights" />
+        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, bananas foster, sauce, creamy, bananas, houston, treats" />
 
         <link rel="canonical" href="https://dishtalgia.com/product/bananas-foster-pudding" />
         <meta property="og:title" content="Bananas Foster Pudding - Dishtalgia" />
@@ -51,6 +51,7 @@ const BananasFosterPudding = () => {
         </a>{" "}
         | Located @ Porky's Backyard 5131 Atascocita Road, Humble, TX 77346
       </Typography>
+
 
       <Typography
         variant="h2"

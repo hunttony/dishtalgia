@@ -22,7 +22,7 @@ const OriginalBananaPudding = () => {
           name="description"
           content="Enjoy our creamy, homemade Original Banana Pudding, made with fresh bananas and vanilla wafers. Order yours now!"
         />
-        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, sauce, creamy, bananas, houston, heights" />
+        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, sauce, creamy, bananas, houston, heights, treats" />
         <link rel="canonical" href="https://dishtalgia.com/product/original-banana-pudding" />
         <meta property="og:title" content="Original Banana Pudding - Dishtalgia" />
         <meta

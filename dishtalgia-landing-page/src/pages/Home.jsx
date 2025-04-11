@@ -40,7 +40,7 @@ const Home = () => {
           name="description"
           content="Indulge in the best banana pudding from Dishtalgia. Order now and enjoy delicious desserts in Houston & Humble, TX."
         />
-        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, bananas foster, sauce, creamy, bananas, houston, heights, humble, dishtalgia, nostalgic, texas, " />
+        <meta name="keywords" content="banana pudding, pudding, desserts, sweet, delicious, original, bananas foster, sauce, creamy, bananas, houston, heights, humble, dishtalgia, nostalgic, texas, treats" />
 
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://dishtalgia.com/" />
