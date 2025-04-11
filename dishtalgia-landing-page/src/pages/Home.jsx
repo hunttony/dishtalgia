@@ -17,17 +17,19 @@ const Home = () => {
     script.onload = () => {
       if (window.ml) {
         window.ml("account", "1404622"); // Ensure this is your correct MailerLite account ID
-        setScriptLoaded(true); // Mark script as loaded
+        setScriptLoaded(true);
       }
     };
 
     script.onerror = () => {
       console.error("Failed to load MailerLite script");
-      setScriptLoaded(false); // Handle script load failure
+      setScriptLoaded(false);
     };
 
     return () => {
-      document.body.removeChild(script);
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
     };
   }, []);
 
@@ -113,11 +115,7 @@ const Home = () => {
           sx={{ flexWrap: "wrap" }}
         >
           {/* Original Banana Pudding */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-          >
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
             <Paper
               elevation={4}
               sx={{
@@ -127,17 +125,12 @@ const Home = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.75)",
               }}
             >
-              <Link
-                to="/product/original-banana-pudding"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
+              <Link to="/product/original-banana-pudding" style={{ textDecoration: "none", color: "inherit" }}>
                 <img
                   src="/DOBP.png"
                   alt="Best Banana Pudding in Houston"
-                  maxWidth="300"
-                  maxHeight="200"
                   loading="lazy"
-                  style={{ borderRadius: 10 }}
+                  style={{ borderRadius: 10, maxWidth: "300px", maxHeight: "200px" }}
                 />
                 <Typography variant="h3" sx={{ fontSize: "1.25rem", mt: 1 }}>
                   Original Banana Pudding
@@ -147,11 +140,7 @@ const Home = () => {
           </motion.div>
 
           {/* Bananas Foster Banana Pudding */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
-          >
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>
             <Paper
               elevation={4}
               sx={{
@@ -161,17 +150,12 @@ const Home = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.75)",
               }}
             >
-              <Link
-                to="/product/bananas-foster-pudding"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
+              <Link to="/product/bananas-foster-pudding" style={{ textDecoration: "none", color: "inherit" }}>
                 <img
                   src="/DBFBP.png"
                   alt="Best Bananas Foster Pudding in Houston"
-                  maxWidth="300"
-                  maxHeight="200"
                   loading="lazy"
-                  style={{ borderRadius: 10 }}
+                  style={{ borderRadius: 10, maxWidth: "300px", maxHeight: "200px" }}
                 />
                 <Typography variant="h3" sx={{ fontSize: "1.25rem", mt: 1 }}>
                   Bananas Foster Pudding
@@ -181,55 +165,9 @@ const Home = () => {
           </motion.div>
         </Box>
 
-        {/* Fun Facts Section */}
-        <Paper
-          elevation={6}
-          sx={{
-            padding: 4,
-            marginTop: 5,
-            backgroundColor: "#f8f8f8",
-            marginBottom: 5,
-          }}
-        >
-          <Typography
-            variant="h3"
-            sx={{
-              textAlign: "center",
-              fontWeight: "bold",
-              color: "#333",
-              marginBottom: 2,
-            }}
-          >
-            🍌 Fun Facts About Banana Pudding! 🍮
-          </Typography>
-          <Box
-            component="ul"
-            sx={{ fontSize: "1.2rem", color: "#555", lineHeight: "1.8", pl: 2 }}
-          >
-            <Typography component="li">
-              Banana pudding has been a <strong>Southern dessert favorite</strong> since the late 19th century.
-            </Typography>
-            <Typography component="li">
-              The first known banana pudding recipe was published in <strong>1878</strong> in "Housekeeping in Old Virginia".
-            </Typography>
-            <Typography component="li">
-              Traditional banana pudding is made with <strong>vanilla wafers, bananas, and custard</strong>—but we made ours even better! 😉
-            </Typography>
-            <Typography component="li">
-              There's an <strong>Annual National Banana Pudding Festival</strong> held in Tennessee every October! 🎉
-            </Typography>
-          </Box>
-        </Paper>
-
-        
-
         {/* Subscription Section (MailerLite Embed) */}
         <Box textAlign="center" marginTop={4}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2 }}
-          >
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>
             <Typography
               variant="h3"
               sx={{
