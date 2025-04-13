@@ -54,7 +54,7 @@ const Order = () => {
   const calculateTotal = () => cart.reduce((total, item) => total + item.price, 0);
 
   return (
-    <Container sx={{ paddingY: 4, textAlign: "center", justifyItems: "center", backgroundColor:"rgba(0, 0, 0 ,.7)", maxWidth:"600px"}}>
+    <Container sx={{ paddingY: 4, textAlign: "center", justifyItems: "center", backgroundColor:"rgba(0, 0, 0 ,.3)", maxWidth:"600px"}}>
       <Helmet>
         <title>Order Banana Pudding - Dishtalgia</title>
         <meta
@@ -71,7 +71,7 @@ const Order = () => {
 
       {/* 🏦 Hosted PayPal Button */}
       <Box sx={{ marginTop: 3, width: "400px", justifySelf:"center"}}>
-        <Typography variant="h3" color="rgb(55,55,55)">Checkout</Typography>
+        <Typography variant="h3" color="rgb(0, 0, 0)">Checkout</Typography>
 
         {paypalError && (
           <Alert severity="error" sx={{ marginTop: 2 }}>
