@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Box, Button, Grid, useTheme, useMediaQuery } from "@mui/material";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 

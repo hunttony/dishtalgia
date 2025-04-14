@@ -6,7 +6,7 @@ import {
   Paper
 } from "@mui/material";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "../App.css";
 
