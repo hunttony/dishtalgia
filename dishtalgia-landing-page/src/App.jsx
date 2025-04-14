@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import OriginalBananaPudding from "./product/original-banana-pudding";
 import BananasFosterPudding from "./product/bananas-foster-pudding";
 import Order from "./pages/Order";
-import Header from "./components/Header"; // Adjust path based on your folder structure
+import Header from "./components/header"; // Adjust path based on your folder structure
 import Footer from "./components/Footer"; // Adjust path based on your folder structure
 
 const App = () => {
