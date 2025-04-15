@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import OriginalBananaPudding from "./product/original-banana-pudding";
 import BananasFosterPudding from "./product/bananas-foster-pudding";
@@ -9,6 +9,7 @@ import Footer from "./components/Footer"; // Adjust path based on your folder st
 
 const App = () => {
   return (
+    <BrowserRouter>
     <Router>
       <Header />
       <Routes>
@@ -28,6 +29,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
+    </BrowserRouter>
   );
 };
 
