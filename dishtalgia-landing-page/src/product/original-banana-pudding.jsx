@@ -230,9 +230,9 @@ const OriginalBananaPudding = () => {
         </Typography>
         <Grid container spacing={2} justifyContent="center">
           {[
-            { size: "Regular (8oz)", price: "$8" },
-            { size: "Large (32oz)", price: "$28" },
-            { size: "Party (96oz)", price: "$80" },
+            { size: "Regular (8oz)", price: "$10" },
+            { size: "Large (32oz)", price: "$38" },
+            { size: "Party (96oz)", price: "$100" },
           ].map((item, index) => (
             <Grid item xs={12} sm={4} key={index}>
               <motion.div
