@@ -8,7 +8,7 @@ import Header from "./components/Header"; // Adjust path based on your folder st
 import Footer from "./components/Footer"; // Adjust path based on your folder structure
 
 const App = () => {
-  returFootern (
+  return (
     <Router>
       <Header />
       <Routes>
