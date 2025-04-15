@@ -69,7 +69,7 @@ const Order = () => {
         />
       </Helmet>
 
-      <Box sx={{ mt: 3 }}>
+      <Box sx={{ mt: 3, justifySelf:"center", width:"400px" }}>
         <Typography variant="h3" color="rgb(0, 0, 0)">
           Checkout
         </Typography>
