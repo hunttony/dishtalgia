@@ -140,4 +140,5 @@ module.exports = async (req, res) => {
   } else {
     res.status(404).json({ error: 'Not found' });
   }
+  
 };

@@ -405,6 +405,7 @@ const Cart = () => {
       </CenteredBox>
     </Container>
   );
+  
 };
 
 export default Cart;

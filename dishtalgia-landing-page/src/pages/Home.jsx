@@ -402,6 +402,7 @@ const Home = () => {
       </Container>
     </div>
   );
+  
 };
 
 export default Home;
