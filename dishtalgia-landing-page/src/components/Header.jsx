@@ -1,11 +1,18 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button, useTheme, useMediaQuery } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, useTheme, useMediaQuery, Badge } from "@mui/material";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useCart } from "../context/CartContext";
 
 const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const { cart } = useCart();
+
+  // Calculate total items in cart
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  // Calculate total price
+  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 
   // Animation variants for header elements
   const logoVariants = {
@@ -18,6 +25,11 @@ const Header = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } },
   };
 
+  const cartVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.3 } },
+  };
+
   const buttonVariants = {
     hidden: { opacity: 0, x: 20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.4 } },
@@ -26,7 +38,9 @@ const Header = () => {
   return (
     <AppBar
       position="static"
-      sx={{background: "linear-gradient(90deg, rgba(62, 39, 35, 0.7) 0%, rgba(93, 64, 55, 0.7) 100%)",xShadow: "0 4px 12px rgba(0,0,0,0.7)",
+      sx={{
+        background: "linear-gradient(90deg, rgba(62, 39, 35, 0.7) 0%, rgba(93, 64, 55, 0.7) 100%)",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.7)",
         width: "100vw",
         zIndex: 1200,
       }}
@@ -79,6 +93,26 @@ const Header = () => {
           </Typography>
         </motion.div>
 
+        {/* Cart Data */}
+        <motion.div variants={cartVariants} initial="hidden" animate="visible">
+          <Badge badgeContent={totalItems} color="error">
+            <Typography
+              variant="h6"
+              sx={{
+                color: "#FFF",
+                fontWeight: 600,
+                fontSize: isMobile ? "0.9rem" : "1.2rem",
+                fontFamily: "'Poppins', sans-serif",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+              }}
+            >
+              🛒 Cart: ${totalPrice}
+            </Typography>
+          </Badge>
+        </motion.div>
+
         {/* Order Now Button linking to Order page */}
         <motion.div
           variants={buttonVariants}
@@ -89,7 +123,7 @@ const Header = () => {
         >
           <Button
             component={Link}
-            to="/Order"
+            to="/order"
             variant="contained"
             sx={{
               background: "linear-gradient(45deg, #FF6F00, #FFA726)",

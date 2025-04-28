@@ -1,6 +1,48 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ]
+  "version": 2,
+  "framework": null,
+  "builds": [
+    {
+      "src": "/api/*.cjs",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/assets/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/api/orders",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/orders.cjs"
+      
+    },
+    {
+      "src": "/api/orders/([^/]+)/capture",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/orders.cjs"
+      
+    },
+    {
+      "src": "/api/orders/([^/]+)",
+      "methods": ["GET", "OPTIONS"],
+      "dest": "/api/orders.cjs"
+      
+    }
+  ],
+
+  "env": {
+    "NODE_ENV": "production"
   }
-  
+}

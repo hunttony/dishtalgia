@@ -35,6 +35,10 @@ const Footer = () => {
             alt="TikTok"
           />
         </a>
+
+        <Typography>
+          
+        </Typography>
         
       </div>
       
